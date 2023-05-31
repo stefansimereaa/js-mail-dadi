@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css' integrity='sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==' crossorigin='anonymous'/>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gioco dadi</title>
+</head>
+<body>
+    <main class="container mt-3 text-center">
+        <h1>Gioca a dadi contro la cpu</h1>
+        <!-- Number -->
+        <label for="number" class="mb-3">Inserisci un numero da 1 a 6</label><br>
+        <div class="input-group mb-5">
+        <input type="number" class="form-control" name="number" id="number" min="1" max="6">
+        </div>
+        <!-- Buttons -->
+        <input class="btn btn-primary me-4" type="button" value="Genera" id="generates">
+        <input class="btn btn-primary" type="button" value="Annulla" id="cancel">
+
+        <div class="container-sm">
+            <div class="row d-none" id="result">
+                <h3 id="results" class="text-warning">Risultato </h3>
+            </div>
+        </div>
+    </main>
+    <!-- Js -->
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+</body>
+</html>
